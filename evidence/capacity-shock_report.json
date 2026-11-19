@@ -1,0 +1,23 @@
+{
+  "scenario": "capacity-shock",
+  "summary": {
+    "total_jobs": 5,
+    "completed_jobs": 2,
+    "deferred_jobs": 3,
+    "waves": 2,
+    "matching_assignments": 2,
+    "estimated_processing_seconds": 17,
+    "estimated_makespan_seconds": 17,
+    "makespan_model": "wave_barrier_estimate",
+    "total_route_cost": 5
+  },
+  "jobs": [
+    {"job_id": 103, "tile_id": "tile_12_07", "status": "completed", "compute_node": "compute-01", "source_storage": "storage-source", "destination_storage": "storage-archive", "wave": 1, "estimated_seconds": 7, "input_bytes": 6000000, "route_cost": 2.5, "input_route": ["storage-source", "compute-01"], "output_route": ["compute-01", "storage-archive"]},
+    {"job_id": 101, "tile_id": "tile_12_05", "status": "completed", "compute_node": "compute-01", "source_storage": "storage-source", "destination_storage": "storage-archive", "wave": 2, "estimated_seconds": 10, "input_bytes": 10000000, "route_cost": 2.5, "input_route": ["storage-source", "compute-01"], "output_route": ["compute-01", "storage-archive"]}
+  ],
+  "deferred_job_ids": [102, 104, 105],
+  "final_storage_used_bytes": {
+    "storage-archive": 2143483648,
+    "storage-source": 1073741824
+  }
+}

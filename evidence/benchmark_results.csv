@@ -1,0 +1,50 @@
+category,dataset,input_size,algorithm,median_microseconds,correctness,estimated_auxiliary_bytes,notes
+sorting,random,1000,merge_sort,24,pass,8000,median of 3 runs; auxiliary buffer estimate
+sorting,random,1000,quick_sort,22,pass,176,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,sorted,1000,merge_sort,10,pass,8000,median of 3 runs; auxiliary buffer estimate
+sorting,sorted,1000,quick_sort,15,pass,176,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,reverse,1000,merge_sort,10,pass,8000,median of 3 runs; auxiliary buffer estimate
+sorting,reverse,1000,quick_sort,13,pass,176,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,duplicates,1000,merge_sort,15,pass,8000,median of 3 runs; auxiliary buffer estimate
+sorting,duplicates,1000,quick_sort,5,pass,176,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,organ-pipe,1000,merge_sort,10,pass,8000,median of 3 runs; auxiliary buffer estimate
+sorting,organ-pipe,1000,quick_sort,14,pass,176,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,random,10000,merge_sort,440,pass,80000,median of 3 runs; auxiliary buffer estimate
+sorting,random,10000,quick_sort,384,pass,240,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,sorted,10000,merge_sort,131,pass,80000,median of 3 runs; auxiliary buffer estimate
+sorting,sorted,10000,quick_sort,309,pass,240,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,reverse,10000,merge_sort,134,pass,80000,median of 3 runs; auxiliary buffer estimate
+sorting,reverse,10000,quick_sort,229,pass,240,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,duplicates,10000,merge_sort,262,pass,80000,median of 3 runs; auxiliary buffer estimate
+sorting,duplicates,10000,quick_sort,67,pass,240,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,organ-pipe,10000,merge_sort,138,pass,80000,median of 3 runs; auxiliary buffer estimate
+sorting,organ-pipe,10000,quick_sort,226,pass,240,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,random,50000,merge_sort,2606,pass,400000,median of 3 runs; auxiliary buffer estimate
+sorting,random,50000,quick_sort,2112,pass,272,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,sorted,50000,merge_sort,827,pass,400000,median of 3 runs; auxiliary buffer estimate
+sorting,sorted,50000,quick_sort,3134,pass,272,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,reverse,50000,merge_sort,891,pass,400000,median of 3 runs; auxiliary buffer estimate
+sorting,reverse,50000,quick_sort,2211,pass,272,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,duplicates,50000,merge_sort,1575,pass,400000,median of 3 runs; auxiliary buffer estimate
+sorting,duplicates,50000,quick_sort,385,pass,272,median of 3 runs; recursion-stack estimate; not measured RSS
+sorting,organ-pipe,50000,merge_sort,783,pass,400000,median of 3 runs; auxiliary buffer estimate
+sorting,organ-pipe,50000,quick_sort,1549,pass,272,median of 3 runs; recursion-stack estimate; not measured RSS
+string_search,repetitive,1000,naive,11,pass,0,pattern length 48; median of 3 runs; excludes returned match-vector storage
+string_search,repetitive,1000,rabin_karp,5,pass,24,pattern length 48; median of 3 runs; excludes returned match-vector storage
+string_search,repetitive,1000,kmp,2,pass,384,pattern length 48; median of 3 runs; excludes returned match-vector storage
+string_search,repetitive,1000,finite_automaton,8,pass,98304,pattern length 48; median of 3 runs; excludes returned match-vector storage
+string_search,repetitive,10000,naive,122,pass,0,pattern length 48; median of 3 runs; excludes returned match-vector storage
+string_search,repetitive,10000,rabin_karp,49,pass,24,pattern length 48; median of 3 runs; excludes returned match-vector storage
+string_search,repetitive,10000,kmp,13,pass,384,pattern length 48; median of 3 runs; excludes returned match-vector storage
+string_search,repetitive,10000,finite_automaton,21,pass,98304,pattern length 48; median of 3 runs; excludes returned match-vector storage
+string_search,repetitive,50000,naive,580,pass,0,pattern length 48; median of 3 runs; excludes returned match-vector storage
+string_search,repetitive,50000,rabin_karp,257,pass,24,pattern length 48; median of 3 runs; excludes returned match-vector storage
+string_search,repetitive,50000,kmp,61,pass,384,pattern length 48; median of 3 runs; excludes returned match-vector storage
+string_search,repetitive,50000,finite_automaton,86,pass,98304,pattern length 48; median of 3 runs; excludes returned match-vector storage
+exact_search,capacity-100,22,dynamic_programming_oracle,4,pass,,median of 5 runs; exact optimum value=545
+exact_search,capacity-100,22,branch_and_bound_FIFO,36,pass,,median of 5 runs; value=545; weight=100; expanded_nodes=303; generated_nodes=571
+exact_search,capacity-100,22,branch_and_bound_LIFO,143,pass,,median of 5 runs; value=545; weight=100; expanded_nodes=2447; generated_nodes=2447
+exact_search,capacity-100,22,branch_and_bound_least-cost,4,pass,,median of 5 runs; value=545; weight=100; expanded_nodes=18; generated_nodes=28
+scheduler,normal,5,integrated_scheduler,15,pass,,median of 5 runs; host-dependent wall time; completed=5; deferred=0; waves=2
+scheduler,capacity-shock,5,integrated_scheduler,10,pass,,median of 5 runs; host-dependent wall time; completed=2; deferred=3; waves=2
+scheduler,stress,128,integrated_scheduler,4293,pass,,median of 5 runs; host-dependent wall time; completed=128; deferred=0; waves=16

@@ -1,0 +1,12 @@
+2026-11-19T12:37:47+05:30
+Fedora release 44 (Forty Four)
+Architecture:                            x86_64
+CPU(s):                                  16
+On-line CPU(s) list:                     0-15
+Model name:                              AMD Ryzen 7 250 w/ Radeon 780M Graphics
+CPU(s) scaling MHz:                      46%
+NUMA node0 CPU(s):                       0-15
+               total        used        free      shared  buff/cache   available
+Mem:            14Gi       4.6Gi       5.0Gi        84Mi       5.6Gi        10Gi
+Swap:          8.0Gi          0B       8.0Gi
+g++ (GCC) 16.2.1 20261029 (Red Hat 16.2.1-3)

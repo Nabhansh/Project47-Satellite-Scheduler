@@ -1,0 +1,26 @@
+{
+  "scenario": "normal",
+  "summary": {
+    "total_jobs": 5,
+    "completed_jobs": 5,
+    "deferred_jobs": 0,
+    "waves": 2,
+    "matching_assignments": 5,
+    "estimated_processing_seconds": 53,
+    "estimated_makespan_seconds": 27,
+    "makespan_model": "wave_barrier_estimate",
+    "total_route_cost": 13.9
+  },
+  "jobs": [
+    {"job_id": 103, "tile_id": "tile_12_07", "status": "completed", "compute_node": "compute-03", "source_storage": "storage-source", "destination_storage": "storage-archive", "wave": 1, "estimated_seconds": 7, "input_bytes": 6000000, "route_cost": 3.3, "input_route": ["storage-source", "compute-03"], "output_route": ["compute-03", "storage-archive"]},
+    {"job_id": 101, "tile_id": "tile_12_05", "status": "completed", "compute_node": "compute-02", "source_storage": "storage-source", "destination_storage": "storage-archive", "wave": 1, "estimated_seconds": 10, "input_bytes": 10000000, "route_cost": 2.8, "input_route": ["storage-source", "compute-02"], "output_route": ["compute-02", "storage-archive"]},
+    {"job_id": 102, "tile_id": "tile_12_06", "status": "completed", "compute_node": "compute-01", "source_storage": "storage-source", "destination_storage": "storage-archive", "wave": 1, "estimated_seconds": 12, "input_bytes": 8000000, "route_cost": 2.5, "input_route": ["storage-source", "compute-01"], "output_route": ["compute-01", "storage-archive"]},
+    {"job_id": 104, "tile_id": "tile_12_08", "status": "completed", "compute_node": "compute-02", "source_storage": "storage-source", "destination_storage": "storage-archive", "wave": 2, "estimated_seconds": 15, "input_bytes": 12000000, "route_cost": 2.8, "input_route": ["storage-source", "compute-02"], "output_route": ["compute-02", "storage-archive"]},
+    {"job_id": 105, "tile_id": "tile_12_09", "status": "completed", "compute_node": "compute-01", "source_storage": "storage-source", "destination_storage": "storage-archive", "wave": 2, "estimated_seconds": 9, "input_bytes": 9000000, "route_cost": 2.5, "input_route": ["storage-source", "compute-01"], "output_route": ["compute-01", "storage-archive"]}
+  ],
+  "deferred_job_ids": [],
+  "final_storage_used_bytes": {
+    "storage-archive": 45000000,
+    "storage-source": 1073741824
+  }
+}
