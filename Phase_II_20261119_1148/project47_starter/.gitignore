@@ -1,0 +1,11 @@
+/build/
+*.o
+*.a
+*.so
+*.exe
+/build-*/
+outputs/
+build-release/
+outputs_phase9_benchmark.csv
+*.log
+build-strict/

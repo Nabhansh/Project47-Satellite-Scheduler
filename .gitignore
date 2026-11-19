@@ -1,0 +1,11 @@
+# Generated build products and run outputs, wherever they occur
+**/build/
+**/build-*/
+**/outputs/
+**/.git/
+*.o
+*.a
+*.so
+*.exe
+*.log
+*.zip
